@@ -20,7 +20,7 @@ function addItem() {
 }
 
 inpNewTask.keypress((e) => {
-    if(e.which == 13) addItem()
+    if(e.which == 13 && inpNewTask.val().length != 0) addItem()
     toggleInputButtons()
 })
 
